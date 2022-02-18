@@ -1,0 +1,22 @@
+extends: 
+  - airbnb
+  - "plugin:react-hooks/recommended"
+
+parser: babel-eslint
+
+parserOptions:
+  emitWarning: true
+  ecmaVersion: 6
+  ecmaFeatures:
+    jsx: true
+
+rules:
+  "react/forbid-prop-types": [0, {}]
+  "react/require-default-props": "off"
+  "template-curly-spacing" : "off"
+  "no-plusplus": "off"
+  "no-use-before-define": ["error", { "variables": false, "functions": false }]
+  indent : "off"
+
+env:
+  browser: true

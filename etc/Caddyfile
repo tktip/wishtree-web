@@ -1,0 +1,13 @@
+0.0.0.0:80
+index index.html
+
+ext .html
+
+log stdout
+errors stderr
+
+# if directory is /assets/ change it to /dist/
+rewrite {
+    if {dir} is /static/
+    to /trondheimsdrommer/static/{file}
+}
