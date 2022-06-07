@@ -22,3 +22,4 @@ After cloning/downloading this repo, enter the project folder and run `yarn`, fo
 
 ### Docker
 If you wish to run the font-end in a Docker container rather than serving the static files directly, build a container with `docker build . -t IMAGE_NAME:TAG`, inserting your own image name and tag. The container will serve the static files with the very lightweight Caddy server.
+Running the docker image could be done with `docker run -d --rm -it -p 8080:8080 IMAGE_NAME:TAG`, inserting your own image name and tag.
